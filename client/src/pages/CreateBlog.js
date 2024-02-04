@@ -21,7 +21,7 @@ const CreateBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("/api/v1/blog/create-blog", {
+      const { data } = await axios.post("https://fibalb.onrender.com/api/v1/blog/create-blog", {
         title: inputs.title,
         description: inputs.description,
         image: inputs.image,
